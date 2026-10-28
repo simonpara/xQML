@@ -44,8 +44,8 @@ else:
 libcov = Extension(name="xqml._libcov",
                    sources=["src/libcov.c","src/_libcov.pyx"],
                    libraries=libs,
-                   include_dirs=['src', numpy_include],
-                   library_dirs=["src"],
+                   include_dirs=['src', numpy_include, '/opt/local/include/openblas'],
+                   library_dirs=["src", "/opt/local/lib"],
                    extra_compile_args=extra
                    )
 

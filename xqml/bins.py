@@ -14,7 +14,7 @@ class Bins(object):
 
         lmins = np.asarray( lmins)
         lmaxs = np.asarray( lmaxs)
-        cutfirst = np.logical_and(lmaxs>=2 ,lmins>=2)
+        cutfirst = np.logical_and(lmaxs>=2 ,lmins>=1)
         self.lmins = lmins[cutfirst]
         self.lmaxs = lmaxs[cutfirst]
         
